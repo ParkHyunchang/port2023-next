@@ -14,7 +14,7 @@ const Header = () => {
             <div className="header__inner">
                 <div className="header__logo">
                     <h1>
-                        <a href="#">portfolio<em>next.js</em></a>
+                        <a href="#">Osaka<em>next.js</em></a>
                     </h1>
                 </div>
                 <nav 

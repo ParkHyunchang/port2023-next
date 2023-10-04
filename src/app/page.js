@@ -3,9 +3,9 @@ import React, { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
-import Skill from "@/components/Skill";
+import Schedule from "@/components/Schedule";
 import Site from "@/components/Site";
-import Port from "@/components/Port";
+import Picture from "@/components/Picture";
 import Contact from "@/components/Contact";
 import Skip from "@/components/Skip";
 import lenis from "@/utils/lenis";
@@ -23,9 +23,9 @@ export default function Home() {
             <Header />
             <main id="main" role="main">
                 <Intro />
-                <Skill />
+                <Schedule />
                 <Site />
-                <Port />
+                <Picture />
                 <Contact />
             </main>
             <Footer />

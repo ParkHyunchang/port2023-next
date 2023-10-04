@@ -1,12 +1,12 @@
-#port {
+#picture {
     width: 100%;
     margin-top: 30vh;
     // overflow: hidden;
 }
-.port__inner {
+.picture__inner {
     padding: 16px;
 
-    .port__title {
+    .picture__title {
         width: 100%;
         height: 5vw;
         font-size: 4vw;
@@ -25,12 +25,12 @@
             line-height: 2;
         }
     }
-    .port__wrap {
+    .picture__wrap {
         display: flex;
         flex-wrap: wrap;
         width: 7000px;
 
-        .port__item {
+        .picture__item {
             width: 500px;
             height: 70vh;
             background-color: var(--subBg100);

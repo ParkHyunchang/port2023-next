@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
-import { portText } from "@/constants";
+import { pictureText } from "@/constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const Port = () => {
+const Picture = () => {
     const horizontalRef = useRef(null);
     const sectionRef = useRef([]);
 
@@ -35,25 +35,25 @@ const Port = () => {
     }, []);
 
     return (
-        <section id="port" ref={horizontalRef}>
-            <div className="port__inner">
-                <h2 className="port__title">
-                    portfolio <em>포폴 작업물</em>
+        <section id="picture" ref={horizontalRef}>
+            <div className="picture__inner">
+                <h2 className="picture__title">
+                    picture <em>사진</em>
                 </h2>
-                <div className="port__wrap">
-                    {portText.map((port, key) => (
+                <div className="picture__wrap">
+                    {pictureText.map((picture, key) => (
                         <article 
-                            className={`port__item p${key+1}`} 
+                            className={`picture__item p${key+1}`} 
                             key={key}
                             ref={(el) => (sectionRef.current[key]=el)}
                         >
-                            <span className="num">{port.num}.</span>
-                            <a href={port.code} target="_blank" className="img">
-                                <Image src={port.img} alt={port.name} width={420} height={262} />
+                            <span className="num">{picture.num}.</span>
+                            <a href={picture.code} target="_blank" className="img">
+                                <Image src={picture.img} alt={picture.name} width={420} height={262} />
                             </a>
-                            <h3 className="title">{port.title}</h3>
-                            <p className="desc">{port.desc}</p>
-                            <a href={port.view} target="_blank" className="site">사이트 보기</a>
+                            <h3 className="title">{picture.title}</h3>
+                            <p className="desc">{picture.desc}</p>
+                            {/* <a href={picture.view} target="_blank" className="site">사이트 보기</a> */}
                         </article>
                     ))}
                 </div>
@@ -62,4 +62,4 @@ const Port = () => {
     )
 }
 
-export default Port;
+export default Picture;
